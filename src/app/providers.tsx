@@ -4,7 +4,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactNode, useState } from "react";
 
 export default function Providers({ children }: { children: ReactNode }) {
-	// cria o client apenas uma vez
 	const [queryClient] = useState(() => new QueryClient());
 
 	return (
